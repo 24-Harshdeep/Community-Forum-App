@@ -2,11 +2,5 @@
   "buildCommand": "cd client && npm install && npm run build",
   "outputDirectory": "client/dist",
   "framework": null,
-  "installCommand": "npm install --prefix client",
-  "rewrites": [
-    {
-      "source": "/api/(.*)",
-      "destination": "/api/server.js"
-    }
-  ]
+  "installCommand": "npm install --prefix client"
 }

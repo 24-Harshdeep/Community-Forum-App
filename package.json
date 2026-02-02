@@ -4,7 +4,7 @@
   "description": "JSON Server backend for a forum app with authentication",
   "main": "server.js",
   "scripts": {
-    "start": "json-server-auth --watch db.json --port 3001",
+    "start": "json-server-auth --watch db.json --port ${PORT:-3001} --host 0.0.0.0",
     "start:auth": "json-server-auth --watch db.json --port 3001",
     "dev": "nodemon --exec npm run start:auth",
     "test": "node test-api.js",
