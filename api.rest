@@ -143,7 +143,7 @@ Authorization: Bearer {{token}}
 Content-Type: application/json
 
 {
-  "title": "Advanced TypeScript Patterns",
+  "title": "Learning git commit",
   "content": "TypeScript provides powerful features for building scalable applications. Let's explore some advanced patterns that can improve your code quality.\n\nConditional types, mapped types, and generic constraints are powerful tools in your TypeScript arsenal.",
   "authorId": 2,
   "author": {
