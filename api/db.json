@@ -1,0 +1,768 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "john@example.com",
+      "password": "$2a$10$Xy5.6z8K9L0M1N2O3P4Q5u7wXyZ0a1B2C3D4E5F6G7H8I9J0K1L2M3",
+      "username": "john_doe",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=john_doe",
+      "displayName": "John Updated Doe",
+      "bio": "Updated bio - software developer",
+      "createdAt": "2025-12-01T10:00:00Z",
+      "theme": "dark"
+    },
+    {
+      "id": 2,
+      "email": "jane@example.com",
+      "password": "$2a$10$aB1C2D3E4F5G6H7I8J9K0L1M2N3O4P5Q6R7S8T9U0V1W2X3Y4Z5a",
+      "username": "jane_smith",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=jane_smith",
+      "displayName": "Jane Smith",
+      "bio": "Full-stack developer and open-source contributor",
+      "createdAt": "2025-11-15T14:30:00Z",
+      "theme": "dark"
+    },
+    {
+      "id": 3,
+      "email": "alex@example.com",
+      "password": "$2a$10$eF6G7H8I9J0K1L2M3N4O5P6Q7R8S9T0U1V2W3X4Y5Z6a7B8C9D0E",
+      "username": "alex_developer",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=alex_developer",
+      "displayName": "Alex Johnson",
+      "bio": "React specialist and performance optimizer",
+      "createdAt": "2025-10-20T09:15:00Z",
+      "theme": "light"
+    },
+    {
+      "id": 4,
+      "email": "sarah@example.com",
+      "password": "$2a$10$lM2N3O4P5Q6R7S8T9U0V1W2X3Y4Z5a6B7C8D9E0F1G2H3I4J5K6L",
+      "username": "sarah_tech",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=sarah_tech",
+      "displayName": "Sarah Chen",
+      "bio": "DevOps engineer and cloud architect",
+      "createdAt": "2025-09-05T16:45:00Z",
+      "theme": "dark"
+    },
+    {
+      "id": 5,
+      "email": "mike@example.com",
+      "password": "$2a$10$rS8T9U0V1W2X3Y4Z5a6B7C8D9E0F1G2H3I4J5K6L7M8N9O0P1Q2R",
+      "username": "mike_coder",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=mike_coder",
+      "displayName": "Mike Wilson",
+      "bio": "JavaScript enthusiast and tutorial writer",
+      "createdAt": "2025-08-12T11:20:00Z",
+      "theme": "light"
+    },
+    {
+      "email": "newuser@example.com",
+      "password": "$2a$10$xk3Xwe46N8GWm3fngxWBJejqU1OrfXk4KqWcLdE/LZD.22ujt/AnW",
+      "username": "newuser",
+      "bio": "New user bio",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=new_user",
+      "displayName": "New User",
+      "theme": "light",
+      "id": 6
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "Getting started with React Query",
+      "content": "React Query is a powerful library for managing server state. It provides built-in caching, synchronization, and data fetching capabilities. Let me share some tips for getting started.\n\n1. Install react-query: npm install @tanstack/react-query\n2. Wrap your app with QueryClientProvider\n3. Use useQuery for fetching data\n4. Use useMutation for mutations\n\nThe library automatically handles loading, error, and success states, which can significantly simplify your code.",
+      "authorId": 1,
+      "author": {
+        "id": 1,
+        "username": "john_doe",
+        "displayName": "John Doe",
+        "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=john_doe"
+      },
+      "createdAt": "2026-01-18T08:30:00Z",
+      "updatedAt": "2026-01-18T08:30:00Z",
+      "likes": 25,
+      "likedBy": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "commentCount": 5,
+      "tags": [
+        "React",
+        "React-Query",
+        "State-Management"
+      ],
+      "views": 156
+    },
+    {
+      "id": 2,
+      "title": "Redux Toolkit Best Practices",
+      "content": "Redux Toolkit simplifies Redux development with built-in utilities. Here are the best practices I've learned:\n\n- Use createSlice for simpler action creators\n- Configure the store with configureStore\n- Use createAsyncThunk for async operations\n- Leverage immer for immutable updates\n- Keep selectors close to your reducers\n\nThese practices will make your Redux code more maintainable and easier to test.",
+      "authorId": 3,
+      "author": {
+        "id": 3,
+        "username": "alex_developer",
+        "displayName": "Alex Johnson",
+        "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=alex_developer"
+      },
+      "createdAt": "2026-01-17T14:15:00Z",
+      "updatedAt": "2026-01-17T14:15:00Z",
+      "likes": 18,
+      "likedBy": [
+        1,
+        2,
+        4
+      ],
+      "commentCount": 3,
+      "tags": [
+        "Redux",
+        "State-Management",
+        "Best-Practices"
+      ],
+      "views": 98
+    },
+    {
+      "id": 3,
+      "title": "React Router v6 Migration Guide",
+      "content": "Migrating from React Router v5 to v6 can seem daunting, but it's actually quite straightforward. Here are the key changes:\n\n1. Routes are now used instead of Route\n2. Component prop is now element\n3. useHistory is replaced with useNavigate\n4. The new RouteObject type makes typing easier\n5. Relative routing is now supported\n\nThe new API is much cleaner and more intuitive. I highly recommend upgrading!",
+      "authorId": 2,
+      "author": {
+        "id": 2,
+        "username": "jane_smith",
+        "displayName": "Jane Smith",
+        "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=jane_smith"
+      },
+      "createdAt": "2026-01-16T10:45:00Z",
+      "updatedAt": "2026-01-16T10:45:00Z",
+      "likes": 31,
+      "likedBy": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "commentCount": 4,
+      "tags": [
+        "React-Router",
+        "React",
+        "Migration"
+      ],
+      "views": 234
+    },
+    {
+      "id": 4,
+      "title": "Performance Optimization Tips for React Apps",
+      "content": "Performance is crucial for user experience. Here are some effective optimization techniques:\n\n- Use React.memo for preventing unnecessary re-renders\n- Implement code splitting with React.lazy and Suspense\n- Lazy load images and heavy components\n- Use useCallback and useMemo wisely\n- Monitor bundle size with webpack-bundle-analyzer\n- Consider using a Virtual Scroller for large lists\n\nRemember: measure first, optimize later. Use React Profiler and Lighthouse to identify bottlenecks.",
+      "authorId": 3,
+      "author": {
+        "id": 3,
+        "username": "alex_developer",
+        "displayName": "Alex Johnson",
+        "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=alex_developer"
+      },
+      "createdAt": "2026-01-15T16:20:00Z",
+      "updatedAt": "2026-01-15T16:20:00Z",
+      "likes": 42,
+      "likedBy": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "commentCount": 7,
+      "tags": [
+        "Performance",
+        "React",
+        "Optimization"
+      ],
+      "views": 312
+    },
+    {
+      "id": 5,
+      "title": "Understanding React Context API",
+      "content": "React Context API is a powerful feature for managing global state without prop drilling. Let me explain how it works:\n\n1. Create a context using React.createContext()\n2. Create a provider component that wraps your app\n3. Use the useContext hook to access the context values\n\nWhile it's great for user authentication and theme management, for complex state management with many updates, consider using Redux or Zustand.",
+      "authorId": 1,
+      "author": {
+        "id": 1,
+        "username": "john_doe",
+        "displayName": "John Doe",
+        "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=john_doe"
+      },
+      "createdAt": "2026-01-14T12:00:00Z",
+      "updatedAt": "2026-01-14T12:00:00Z",
+      "likes": 29,
+      "likedBy": [
+        2,
+        3,
+        5
+      ],
+      "commentCount": 6,
+      "tags": [
+        "React",
+        "Context-API",
+        "State-Management"
+      ],
+      "views": 187
+    },
+    {
+      "id": 6,
+      "title": "Building a Scalable API with Node.js",
+      "content": "Scaling a Node.js API requires careful planning and architecture. Key considerations:\n\n- Use async/await for clean code\n- Implement proper error handling and logging\n- Use middleware for cross-cutting concerns\n- Implement rate limiting and caching\n- Use clustering for multi-core systems\n- Monitor performance with APM tools\n\nNever forget to test your API thoroughly before deploying to production.",
+      "authorId": 4,
+      "author": {
+        "id": 4,
+        "username": "sarah_tech",
+        "displayName": "Sarah Chen",
+        "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=sarah_tech"
+      },
+      "createdAt": "2026-01-13T09:30:00Z",
+      "updatedAt": "2026-01-13T09:30:00Z",
+      "likes": 15,
+      "likedBy": [
+        1,
+        3,
+        5
+      ],
+      "commentCount": 2,
+      "tags": [
+        "Node.js",
+        "API",
+        "Backend"
+      ],
+      "views": 145
+    },
+    {
+      "id": 7,
+      "title": "CSS-in-JS Libraries Comparison",
+      "content": "There are many CSS-in-JS solutions available. Let's compare the popular ones:\n\n- Styled Components: Great runtime flexibility, smaller bundle with styled-components\n- Emotion: Fast, lightweight, and supports both styled and css prop\n- Tailwind CSS: Utility-first approach, excellent for rapid development\n- CSS Modules: Simple, scoped styles, zero runtime cost\n\nThe choice depends on your project needs. For most projects, I'd recommend Tailwind or CSS Modules.",
+      "authorId": 5,
+      "author": {
+        "id": 5,
+        "username": "mike_coder",
+        "displayName": "Mike Wilson",
+        "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=mike_coder"
+      },
+      "createdAt": "2026-01-12T15:45:00Z",
+      "updatedAt": "2026-01-12T15:45:00Z",
+      "likes": 23,
+      "likedBy": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "commentCount": 8,
+      "tags": [
+        "CSS",
+        "Frontend",
+        "Styling"
+      ],
+      "views": 203
+    },
+    {
+      "id": 8,
+      "title": "TypeScript Tips for React Developers",
+      "content": "TypeScript can significantly improve code quality and developer experience in React projects. Here are some tips:\n\n- Define proper types for props and state\n- Use React.FC<Props> for functional components\n- Leverage discriminated unions for complex types\n- Use type guards for runtime safety\n- Avoid using 'any' - use 'unknown' instead\n- Use strict mode in tsconfig.json\n\nWhile there's a learning curve, the benefits of type safety are well worth it.",
+      "authorId": 2,
+      "author": {
+        "id": 2,
+        "username": "jane_smith",
+        "displayName": "Jane Smith",
+        "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=jane_smith"
+      },
+      "createdAt": "2026-01-11T11:15:00Z",
+      "updatedAt": "2026-01-11T11:15:00Z",
+      "likes": 40,
+      "likedBy": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "commentCount": 5,
+      "tags": [
+        "TypeScript",
+        "React",
+        "Best-Practices"
+      ],
+      "views": 267
+    },
+    {
+      "title": "Getting Started with Rust",
+      "content": "Rust is a systems programming language that runs blazingly fast, prevents segfaults, and guarantees thread safety. Here's how to get started with Rust:\n\n1. Install Rust using rustup\n2. Set up your development environment\n3. Start with basic syntax\n4. Learn about ownership and borrowing\n\nRust's learning curve is steep, but the benefits are worth it!",
+      "authorId": 1,
+      "tags": [
+        "Rust",
+        "Systems-Programming",
+        "Learning"
+      ],
+      "likes": 1,
+      "likedBy": [],
+      "commentCount": 0,
+      "views": 0,
+      "id": 9
+    },
+    {
+      "title": "Learning git commit",
+      "content": "TypeScript provides powerful features for building scalable applications. Let's explore some advanced patterns that can improve your code quality.\n\nConditional types, mapped types, and generic constraints are powerful tools in your TypeScript arsenal.",
+      "authorId": 2,
+      "author": {
+        "id": 2,
+        "username": "jane_smith",
+        "displayName": "Jane Smith",
+        "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=jane_smith"
+      },
+      "tags": [
+        "TypeScript",
+        "Advanced",
+        "Patterns"
+      ],
+      "likes": 0,
+      "likedBy": [],
+      "commentCount": 0,
+      "views": 0,
+      "id": 10
+    },
+    {
+      "title": "gvxhbjhnk",
+      "content": "chubdjnkm",
+      "author": "Anonymous",
+      "time": 1770039805576,
+      "likes": 1,
+      "id": 11
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "postId": 1,
+      "parentCommentId": null,
+      "authorId": 2,
+      "author": {
+        "id": 2,
+        "username": "jane_smith",
+        "displayName": "Jane Smith",
+        "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=jane_smith"
+      },
+      "content": "Great overview! I've been using React Query for the past 6 months and it has transformed how we handle server state. One tip: don't forget to set up proper cache expiry times for your use case.",
+      "createdAt": "2026-01-18T09:15:00Z",
+      "updatedAt": "2026-01-18T09:15:00Z",
+      "likes": 8,
+      "likedBy": [
+        1,
+        3
+      ],
+      "replies": 1
+    },
+    {
+      "id": 2,
+      "postId": 1,
+      "parentCommentId": 1,
+      "authorId": 3,
+      "author": {
+        "id": 3,
+        "username": "alex_developer",
+        "displayName": "Alex Johnson",
+        "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=alex_developer"
+      },
+      "content": "@jane_smith Absolutely! Cache invalidation is one of the hardest problems in computer science. I usually use the staleTime and cacheTime options carefully.",
+      "createdAt": "2026-01-18T10:30:00Z",
+      "updatedAt": "2026-01-18T10:30:00Z",
+      "likes": 6,
+      "likedBy": [
+        2
+      ],
+      "replies": 0
+    },
+    {
+      "id": 3,
+      "postId": 1,
+      "parentCommentId": null,
+      "authorId": 4,
+      "author": {
+        "id": 4,
+        "username": "sarah_tech",
+        "displayName": "Sarah Chen",
+        "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=sarah_tech"
+      },
+      "content": "Thanks for this! I was struggling with data synchronization issues. This guide really helped clarify how React Query handles refetching.",
+      "createdAt": "2026-01-18T11:45:00Z",
+      "updatedAt": "2026-01-18T11:45:00Z",
+      "likes": 12,
+      "likedBy": [
+        1,
+        2,
+        3
+      ],
+      "replies": 0
+    },
+    {
+      "id": 4,
+      "postId": 2,
+      "parentCommentId": null,
+      "authorId": 1,
+      "author": {
+        "id": 1,
+        "username": "john_doe",
+        "displayName": "John Doe",
+        "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=john_doe"
+      },
+      "content": "Redux Toolkit is a game-changer. The immer integration really eliminates boilerplate. Great breakdown of best practices!",
+      "createdAt": "2026-01-17T15:20:00Z",
+      "updatedAt": "2026-01-17T15:20:00Z",
+      "likes": 5,
+      "likedBy": [
+        2,
+        4
+      ],
+      "replies": 1
+    },
+    {
+      "id": 5,
+      "postId": 2,
+      "parentCommentId": 4,
+      "authorId": 5,
+      "author": {
+        "id": 5,
+        "username": "mike_coder",
+        "displayName": "Mike Wilson",
+        "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=mike_coder"
+      },
+      "content": "@john_doe Yes! And createAsyncThunk really cuts down on boilerplate for async operations. I've been using it extensively in my recent projects.",
+      "createdAt": "2026-01-17T16:45:00Z",
+      "updatedAt": "2026-01-17T16:45:00Z",
+      "likes": 3,
+      "likedBy": [
+        1,
+        3
+      ],
+      "replies": 0
+    },
+    {
+      "id": 6,
+      "postId": 3,
+      "parentCommentId": null,
+      "authorId": 3,
+      "author": {
+        "id": 3,
+        "username": "alex_developer",
+        "displayName": "Alex Johnson",
+        "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=alex_developer"
+      },
+      "content": "The migration to v6 was smooth for us. The new API is much more intuitive. One thing that caught me off guard was the change in how relative paths work.",
+      "createdAt": "2026-01-16T11:30:00Z",
+      "updatedAt": "2026-01-16T11:30:00Z",
+      "likes": 9,
+      "likedBy": [
+        1,
+        2,
+        5
+      ],
+      "replies": 2
+    },
+    {
+      "id": 7,
+      "postId": 3,
+      "parentCommentId": 6,
+      "authorId": 4,
+      "author": {
+        "id": 4,
+        "username": "sarah_tech",
+        "displayName": "Sarah Chen",
+        "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=sarah_tech"
+      },
+      "content": "@alex_developer The relative routing feature is a game-changer though! Makes the code so much cleaner.",
+      "createdAt": "2026-01-16T12:45:00Z",
+      "updatedAt": "2026-01-16T12:45:00Z",
+      "likes": 7,
+      "likedBy": [
+        1,
+        3
+      ],
+      "replies": 0
+    },
+    {
+      "id": 8,
+      "postId": 3,
+      "parentCommentId": 6,
+      "authorId": 5,
+      "author": {
+        "id": 5,
+        "username": "mike_coder",
+        "displayName": "Mike Wilson",
+        "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=mike_coder"
+      },
+      "content": "@alex_developer Agreed! The new RouteObject type also helps with type safety when building routes programmatically.",
+      "createdAt": "2026-01-16T13:20:00Z",
+      "updatedAt": "2026-01-16T13:20:00Z",
+      "likes": 4,
+      "likedBy": [
+        2
+      ],
+      "replies": 0
+    },
+    {
+      "id": 9,
+      "postId": 4,
+      "parentCommentId": null,
+      "authorId": 2,
+      "author": {
+        "id": 2,
+        "username": "jane_smith",
+        "displayName": "Jane Smith",
+        "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=jane_smith"
+      },
+      "content": "Excellent tips! I've seen a 40% reduction in bundle size after implementing lazy loading. Virtual Scrolling is also a huge win for performance.",
+      "createdAt": "2026-01-15T17:30:00Z",
+      "updatedAt": "2026-01-15T17:30:00Z",
+      "likes": 14,
+      "likedBy": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "replies": 1
+    },
+    {
+      "id": 10,
+      "postId": 4,
+      "parentCommentId": 9,
+      "authorId": 1,
+      "author": {
+        "id": 1,
+        "username": "john_doe",
+        "displayName": "John Doe",
+        "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=john_doe"
+      },
+      "content": "@jane_smith 40% is impressive! Virtual Scrolling with react-window has been a game-changer for our application that renders thousands of items.",
+      "createdAt": "2026-01-15T18:15:00Z",
+      "updatedAt": "2026-01-15T18:15:00Z",
+      "likes": 11,
+      "likedBy": [
+        2,
+        3,
+        4
+      ],
+      "replies": 0
+    },
+    {
+      "id": 11,
+      "postId": 5,
+      "parentCommentId": null,
+      "authorId": 3,
+      "author": {
+        "id": 3,
+        "username": "alex_developer",
+        "displayName": "Alex Johnson",
+        "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=alex_developer"
+      },
+      "content": "Great explanation! Context API is perfect for auth and theme. For our forum app, we use it alongside Redux for optimal separation of concerns.",
+      "createdAt": "2026-01-14T13:00:00Z",
+      "updatedAt": "2026-01-14T13:00:00Z",
+      "likes": 10,
+      "likedBy": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "replies": 1
+    },
+    {
+      "id": 12,
+      "postId": 5,
+      "parentCommentId": 11,
+      "authorId": 2,
+      "author": {
+        "id": 2,
+        "username": "jane_smith",
+        "displayName": "Jane Smith",
+        "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=jane_smith"
+      },
+      "content": "@alex_developer That's a smart approach. Combining Context for UI state and Redux for business logic keeps things organized.",
+      "createdAt": "2026-01-14T14:15:00Z",
+      "updatedAt": "2026-01-14T14:15:00Z",
+      "likes": 8,
+      "likedBy": [
+        1,
+        3,
+        5
+      ],
+      "replies": 0
+    },
+    {
+      "id": 13,
+      "postId": 7,
+      "parentCommentId": null,
+      "authorId": 3,
+      "author": {
+        "id": 3,
+        "username": "alex_developer",
+        "displayName": "Alex Johnson",
+        "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=alex_developer"
+      },
+      "content": "Tailwind CSS is my go-to. The utility-first approach saves so much time, and the purging functionality keeps bundle sizes down.",
+      "createdAt": "2026-01-12T16:30:00Z",
+      "updatedAt": "2026-01-12T16:30:00Z",
+      "likes": 13,
+      "likedBy": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "replies": 1
+    },
+    {
+      "id": 14,
+      "postId": 7,
+      "parentCommentId": 13,
+      "authorId": 4,
+      "author": {
+        "id": 4,
+        "username": "sarah_tech",
+        "displayName": "Sarah Chen",
+        "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=sarah_tech"
+      },
+      "content": "@alex_developer Agreed! Though for our design system, we still use CSS Modules for component-level scoping. Best of both worlds!",
+      "createdAt": "2026-01-12T17:45:00Z",
+      "updatedAt": "2026-01-12T17:45:00Z",
+      "likes": 6,
+      "likedBy": [
+        1,
+        3
+      ],
+      "replies": 0
+    },
+    {
+      "id": 15,
+      "postId": 8,
+      "parentCommentId": null,
+      "authorId": 1,
+      "author": {
+        "id": 1,
+        "username": "john_doe",
+        "displayName": "John Doe",
+        "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=john_doe"
+      },
+      "content": "TypeScript with React is a powerful combination. The type safety has helped us catch bugs that would have taken hours to debug otherwise.",
+      "createdAt": "2026-01-11T12:30:00Z",
+      "updatedAt": "2026-01-11T12:30:00Z",
+      "likes": 16,
+      "likedBy": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "replies": 2
+    },
+    {
+      "id": 16,
+      "postId": 8,
+      "parentCommentId": 15,
+      "authorId": 3,
+      "author": {
+        "id": 3,
+        "username": "alex_developer",
+        "displayName": "Alex Johnson",
+        "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=alex_developer"
+      },
+      "content": "@john_doe Discriminated unions have been particularly helpful for handling complex state. The type narrowing is incredible.",
+      "createdAt": "2026-01-11T13:45:00Z",
+      "updatedAt": "2026-01-11T13:45:00Z",
+      "likes": 9,
+      "likedBy": [
+        1,
+        2,
+        5
+      ],
+      "replies": 0
+    },
+    {
+      "id": 17,
+      "postId": 8,
+      "parentCommentId": 15,
+      "authorId": 5,
+      "author": {
+        "id": 5,
+        "username": "mike_coder",
+        "displayName": "Mike Wilson",
+        "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=mike_coder"
+      },
+      "content": "@john_doe Using 'unknown' instead of 'any' has been a game changer. It forces you to be intentional about type handling.",
+      "createdAt": "2026-01-11T14:20:00Z",
+      "updatedAt": "2026-01-11T14:20:00Z",
+      "likes": 12,
+      "likedBy": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "replies": 0
+    },
+    {
+      "postId": 11,
+      "content": "dwsghefhj",
+      "author": "Anon",
+      "time": 1770039816235,
+      "likes": 0,
+      "id": 18
+    },
+    {
+      "postId": 9,
+      "content": "Very good",
+      "author": "Anon",
+      "time": 1770046508267,
+      "likes": 1,
+      "id": 19
+    }
+  ],
+  "likes": [
+    {
+      "id": 1,
+      "userId": 2,
+      "postId": 1,
+      "type": "post"
+    },
+    {
+      "id": 2,
+      "userId": 3,
+      "postId": 1,
+      "type": "post"
+    },
+    {
+      "id": 3,
+      "userId": 4,
+      "postId": 1,
+      "type": "post"
+    },
+    {
+      "id": 4,
+      "userId": 5,
+      "postId": 1,
+      "type": "post"
+    },
+    {
+      "id": 5,
+      "userId": 1,
+      "postId": 2,
+      "type": "post"
+    },
+    {
+      "id": 6,
+      "userId": 2,
+      "postId": 2,
+      "type": "post"
+    },
+    {
+      "id": 7,
+      "userId": 4,
+      "postId": 2,
+      "type": "post"
+    }
+  ]
+}
